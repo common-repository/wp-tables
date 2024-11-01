@@ -1,0 +1,183 @@
+span.wp-tables-shortcode > input{
+    background: inherit;
+    color: inherit;
+    font-size: 12px;
+    border: none;
+    box-shadow: none;
+    padding: 4px 8px;
+    margin: 0;
+}
+
+h1.wp-tables-heading-inline{
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.wp-tables-admin #wp-tables-title{
+    min-width: 260px;
+}
+.wp-tables span.wp-tables-title-row,
+.wp-tables span.wp-tables-shortcode > input[type="text"]{
+    font-size:15px;
+}
+
+.wp-tables-form > table.wp-tables-admin-edit-header > thead > tr > th,
+.wp-tables-form > table.wp-tables-admin-edit-header > tfoot > tr > th,
+.wp-tables-form > table.wp-tables-admin-edit-header > tbody > tr > td{
+    padding:15px;
+    border-left: 1px solid #32373C;
+    border-right: 1px solid #32373C;
+}
+
+.wp-tables-form > table.wp-tables-admin-edit-header > thead > tr > th{
+    border-top: 1px solid #32373C;
+}
+.wp-tables-form > table.wp-tables-admin-edit-header > tbody > tr:last-child > td{
+    border-bottom: 1px solid #32373C;
+}
+
+.wp-tables-form > table.wp-tables-admin-edit-header > thead > tr > th .wp-tables-edit-header,
+.wp-tables-form > table.wp-tables-admin-edit-header > thead > tr > th a.wp-table-head-save{
+    cursor: pointer;
+    font-weight: normal!important;
+    font-size: 12px!important;
+    color: #fff;
+    margin: 0 10px;
+    padding: 1px 10px;
+    border-radius: 3px;
+    background: #0085ba;
+    border-color: #0073aa #006799 #006799;
+    -webkit-box-shadow: 0 1px 0 #006799;
+    box-shadow: 0 1px 0 #006799;
+    text-decoration: none;
+    text-shadow: 0 -1px 1px #006799, 1px 0 1px #006799, 0 1px 1px #006799, -1px 0 1px #006799;
+}
+
+table.wp-tables-admin > tfoot a.button-primary{
+    margin:0 10px;
+}
+
+.wp-table-add-inner > table.form-table > tbody > tr > td > label{
+    padding: 5px 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.wp-table-add-inner > table.form-table > tbody > tr > td > a.button-primary{
+    margin: 0 10px;
+}
+
+.wp-table-add-inner .wp-tables-meta > ul{
+    display: inline-block;
+    vertical-align: top;
+    padding: 15px;
+}
+
+.wp-table-add-inner .wp-tables-meta > ul > li > span{
+    padding: 0 10px;
+}
+
+/*##### Start the dragtable stuff #####*/
+
+.dragtable-sortable {
+    list-style-type: none; margin: 0; padding: 0; -moz-user-select: none;
+}
+.dragtable-sortable li {
+    margin: 0; padding: 0; float: left; font-size: 1em; background: white;
+}
+
+.dragtable-sortable th, .dragtable-sortable td{
+    border-left: 0px;
+}
+
+.dragtable-sortable li:first-child th, .dragtable-sortable li:first-child td {
+    border-left: 1px solid #CCC;
+}
+
+.ui-sortable-helper {
+    opacity: 0.7;filter: alpha(opacity=70);
+}
+.ui-sortable-placeholder {
+    -moz-box-shadow: 4px 5px 4px #C6C6C6 inset;
+    -webkit-box-shadow: 4px 5px 4px #C6C6C6 inset;
+    box-shadow: 4px 5px 4px #C6C6C6 inset;
+    border-bottom: 1px solid #CCCCCC;
+    border-top: 1px solid #CCCCCC;
+    visibility: visible !important;
+    background: #EFEFEF !important;
+    visibility: visible !important;
+}
+.ui-sortable-placeholder * {
+    opacity: 0.0; visibility: hidden;
+}
+
+table.wp-tables-admin-edit-header {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table.wp-tables-admin-edit-header th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+table.wp-tables-admin-edit-header tr:nth-child(even){background-color: #f2f2f2}
+
+table.wp-tables-admin-edit-header thead th {
+    background-color: #EAEAEA;
+    color: #23282D;
+    font-weight:bold;
+}
+
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?bu6oho');
+    src:  url('../fonts/icomoon.eot?bu6oho#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?bu6oho') format('truetype'),
+    url('../fonts/icomoon.woff?bu6oho') format('woff'),
+    url('../fonts/icomoon.svg?bu6oho#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.icon-1311{
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon'!important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 22px;
+    vertical-align: text-bottom;
+    cursor:move;
+}
+
+.icon-1311:before {
+    content: "\e900";
+}
+
+.wp-table-head-text{
+    display: inline-block;
+    padding: 0 0 0 18px;
+}
+.wp-table-head-text > input[type="text"]{
+    max-width: 120px;
+    margin: 0;
+    padding: 5px;
+    font-weight: normal;
+    font-size: 11px;
+}
+
+a.wp-table-head-save{
+    vertical-align: -webkit-baseline-middle;
+    padding: 0 0 0 10px;
+    font-weight: normal!important;
+    font-size: 12px!important;
+    color: #0073aa;
+    cursor: pointer;
+}
+/*##### End the dragtable stuff #####*/
